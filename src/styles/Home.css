@@ -1,0 +1,32 @@
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn-login, .btn-register {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px; 
+  }
+  
+  .btn-login {
+    background-color: #0b532e;
+    color: #e6ffe8;
+    
+  }
+  
+  .btn-register {
+    background-color: #00984a;
+    color: #e6ffe8;
+  }
+  
+  .btn-login:hover, .btn-register:hover {
+    opacity: 0.9;
+  }
+  
