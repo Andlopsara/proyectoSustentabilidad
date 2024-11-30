@@ -1,16 +1,16 @@
 import React from 'react';
-import '../styles/Login.css';
+import '../styles/SignUp.css';
 import logo1 from '../assets/logoSus.png';
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function SignUp() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
     navigate('/login');
   };
 return (
-  <div className="loginContainer">
+  <div className="signUpContainer">
     <div>
       <img src={logo1} className="App-logo1" alt="logo" />
     </div>
@@ -24,4 +24,4 @@ return (
   </div>
 );
 }
-export default Login;
+export default SignUp;

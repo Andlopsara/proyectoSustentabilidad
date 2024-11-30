@@ -1,0 +1,55 @@
+
+.signUpContainer {
+    text-align: center;
+    background-color:black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #013424;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px; 
+  }
+  .App-logo1 {
+    height: 45vmin;
+    pointer-events: none;
+    padding: 15px;
+    display: block;
+    margin: 0 auto; 
+  }
+    
+    .botones {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .botonL, .botonR {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      letter-spacing: 2px; 
+    }
+    
+    .botonL{
+      background-color: #0b532e;
+      color: #e6ffe8;
+      
+    }
+    
+    .botonR{
+      background-color: #00984a;
+      color: #e6ffe8;
+    }
+    
+    .botonL:hover, .botonR:hover {
+      opacity: 0.9;
+    }
+    

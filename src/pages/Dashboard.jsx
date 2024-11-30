@@ -5,11 +5,15 @@ import logo1 from '../assets/logoSus.png';
 import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
-  const navigate = useNavigate();
-
-  const handleLogin = () => {
-    navigate('/login');
-  };
+    const navigate = useNavigate();
+  
+    const handleLogin = () => {
+      navigate('/login'); 
+    };
+  
+    const handleSignUp = () => {
+      navigate('/signUp'); 
+    };
 return (
   <div className="homeContainer">
     <div>
@@ -21,7 +25,7 @@ return (
     </div>
     <div className="botones">
      <button className="botonL" onClick={handleLogin}>INICIAR SESIÓN</button>
-      <button className="botonR">REGISTRARME</button>
+      <button className="botonR" onClick={handleSignUp}>REGISTRARME</button>
     </div>
   </div>
 );
