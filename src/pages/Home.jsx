@@ -7,9 +7,9 @@ export const Home = () => {
       <div>
         <p>BIENVENIDO(A)</p>
       </div>
-      <div className="buttons">
-        <button className="btn-login">INICIAR SESIÓN</button>
-        <button className="btn-register">REGISTRARME</button>
+      <div className="botones">
+        <button className="botonL">INICIAR SESIÓN</button>
+        <button className="botonR">REGISTRARME</button>
       </div>
     </div>
   );

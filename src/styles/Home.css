@@ -1,10 +1,10 @@
-  .buttons {
+  .botones {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
   
-  .btn-login, .btn-register {
+  .botonL, .botonR {
     padding: 10px 20px;
     border: none;
     border-radius: 30px;
@@ -15,18 +15,18 @@
     letter-spacing: 2px; 
   }
   
-  .btn-login {
+  .botonL{
     background-color: #0b532e;
     color: #e6ffe8;
     
   }
   
-  .btn-register {
+  .botonR{
     background-color: #00984a;
     color: #e6ffe8;
   }
   
-  .btn-login:hover, .btn-register:hover {
+  .botonL:hover, .botonR:hover {
     opacity: 0.9;
   }
   
