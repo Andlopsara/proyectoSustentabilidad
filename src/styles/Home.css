@@ -17,7 +17,7 @@
   height: 13vmin;
   pointer-events: none;
   display: block;
-  margin: 0 auto 20px; /* Añadido para dar espacio entre las imágenes */
+  margin: 0 auto 20px; 
 }
 
 .App-logo1 {
@@ -25,7 +25,7 @@
   pointer-events: none;
   padding: 15px;
   display: block;
-  margin: 0 auto; /* Añadido para centrar la segunda imagen */
+  margin: 0 auto; 
 }
   
   .botones {

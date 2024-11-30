@@ -8,7 +8,6 @@ function Home() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Aquí puedes agregar lógica de autenticación antes de redirigir
     navigate('/login');
   };
 return (
