@@ -1,3 +1,33 @@
+
+.homeContainer {
+  text-align: center;
+  background-color: #e6ffe8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #013424;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px; 
+}
+.App-logo {
+  height: 13vmin;
+  pointer-events: none;
+  display: block;
+  margin: 0 auto 20px; /* Añadido para dar espacio entre las imágenes */
+}
+
+.App-logo1 {
+  height: 45vmin;
+  pointer-events: none;
+  padding: 15px;
+  display: block;
+  margin: 0 auto; /* Añadido para centrar la segunda imagen */
+}
+  
   .botones {
     display: flex;
     flex-direction: column;
