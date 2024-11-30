@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../styles/Dashboard.css';
 import logo from '../assets/logoU.png';
 import logo1 from '../assets/logoSus.png';
 import { useNavigate } from 'react-router-dom';
 
-function Home() {
+function Dashboard() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
@@ -26,4 +26,4 @@ return (
   </div>
 );
 }
-export default Home;
+export default Dashboard;
