@@ -14,11 +14,12 @@ function Dashboard() {
     const handleSignUp = () => {
       navigate('/signUp'); 
     };
+
 return (
   <div className="homeContainer">
     <div>
-      <img src={logo} className="App-logo" alt="logo" />
-      <img src={logo1} className="App-logo1" alt="logo" />
+      <img src={logo} className="logoU" alt="logo" />
+      <img src={logo1} className="logoSus" alt="logo" />
     </div>
     <div>
       <p>BIENVENIDO(A)</p>
@@ -30,4 +31,5 @@ return (
   </div>
 );
 }
+
 export default Dashboard;

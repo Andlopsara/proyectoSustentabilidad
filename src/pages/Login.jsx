@@ -1,17 +1,13 @@
 import React from 'react';
 import '../styles/Login.css';
-import logo1 from '../assets/logoSus.png';
+import logo1 from '../assets/logoSus1.png';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate('/dashboard'); // Navega directamente al dashboard
-  };
-
-  const handleSignup = () => {
-    navigate('/signup'); // Navega al componente Signup
+    navigate('/home'); // Ahora navega a Home
   };
 
   return (
@@ -61,7 +57,7 @@ function Login() {
         </button>
       </form>
       <p className="signup-text">
-        Si eres nuevo, <a href="/signup" className="signup-link">REGÍSTRATE</a>
+        Si eres nuevo, <a href="/signUp" className="signup-link">REGÍSTRATE</a>
       </p>
       <p className="go-back-text">
         <a href="/dashboard" className="go-back-link"> ← Regresar</a>

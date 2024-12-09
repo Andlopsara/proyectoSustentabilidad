@@ -1,0 +1,101 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8F9E8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .home-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #E8F9E8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Encabezado */
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #3AA65A;
+    margin: 0;
+  }
+  
+  /* Contenido principal */
+  .home-main {
+    text-align: center;
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  /* Contenedor QR */
+  .qr-container {
+    background-color: #C6EBC6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 0 auto 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px; /* Altura suficiente para incluir el botón */
+  }
+  
+  .qr-container img {
+    width: 60%; /* Ajusta la imagen al centro del contenedor */
+    height: auto;
+    margin-bottom: 1rem; /* Separación con el botón */
+  }
+  
+  .scan-button {
+    background-color: #3AA65A;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 90%;
+    max-width: 150px;
+    text-align: center;
+  }
+  
+  /* Instrucciones */
+  .instructions {
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+    color: #3AA65A;
+  }
+  
+  .instructions p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .instructions p::before {
+    content: "✅";
+    margin-right: 0.5rem;
+    color: #3AA65A;
+  }
+  

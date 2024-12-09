@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/SignUp.css'; // Asegúrate de definir este archivo de estilos
 import logo2 from '../assets/logoSus1.png';
 import { useNavigate } from 'react-router-dom';

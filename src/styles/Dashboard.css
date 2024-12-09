@@ -1,62 +1,116 @@
-
 .homeContainer {
-    text-align: center;
-    background-color: #e6ffe8;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: #013424;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px; 
+  text-align: center;
+  background-color: #e6ffe8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #013424;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logoU {
+  height: 11vmin;
+  pointer-events: none;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.logoSus {
+  height: 35vmin;
+  pointer-events: none;
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botonL, .botonR {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.botonL {
+  background-color: #0b532e;
+  color: #e6ffe8;
+}
+
+.botonR {
+  background-color: #00984a;
+  color: #e6ffe8;
+}
+
+.botonL:hover, .botonR:hover {
+  opacity: 0.9;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .homeContainer {
+    font-size: calc(8px + 2vmin);
+    padding: 10px;
   }
-  .App-logo {
+
+  .logoU {
+    height: 15vmin;
+  }
+
+  .logoSus {
+    height: 30vmin;
+  }
+
+  .botonL, .botonR {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 900px) {
+  .homeContainer {
+    font-size: calc(9px + 2vmin);
+  }
+
+  .logoU {
     height: 13vmin;
-    pointer-events: none;
-    display: block;
-    margin: 0 auto 20px; 
   }
-  
-  .App-logo1 {
-    height: 45vmin;
-    pointer-events: none;
-    padding: 15px;
-    display: block;
-    margin: 0 auto; 
+
+  .logoSus {
+    height: 32vmin;
   }
-    
-    .botones {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    .botonL, .botonR {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      cursor: pointer;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      letter-spacing: 2px; 
-    }
-    
-    .botonL{
-      background-color: #0b532e;
-      color: #e6ffe8;
-      
-    }
-    
-    .botonR{
-      background-color: #00984a;
-      color: #e6ffe8;
-    }
-    
-    .botonL:hover, .botonR:hover {
-      opacity: 0.9;
-    }
-    
+}
+
+/* Pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+  .homeContainer {
+    font-size: calc(12px + 2vmin);
+  }
+
+  .logoU {
+    height: 9vmin;
+  }
+
+  .logoSus {
+    height: 28vmin;
+  }
+
+  .botones {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
