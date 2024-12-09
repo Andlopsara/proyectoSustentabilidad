@@ -7,21 +7,67 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate('/login');
+    navigate('/dashboard'); // Navega directamente al dashboard
   };
-return (
-  <div className="loginContainer">
-    <div>
-      <img src={logo1} className="App-logo1" alt="logo" />
+
+  const handleSignup = () => {
+    navigate('/signup'); // Navega al componente Signup
+  };
+
+  return (
+    <div className="login-container">
+      <div className="logo-section">
+        <img src={logo1} className="logo" alt="logo" />
+      </div>
+      <h1>¡INICIA SESIÓN!</h1>
+      <form
+        className="login-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleLogin();
+        }}
+      >
+        <label htmlFor="matricula">MATRICULA</label>
+        <input
+          type="text"
+          id="matricula"
+          name="matricula"
+          placeholder="Ingresa tu matrícula"
+        />
+
+        <label htmlFor="password">CONTRASEÑA</label>
+        <div className="password-container">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ingresa tu contraseña"
+          />
+          <button
+            type="button"
+            className="toggle-password"
+            onClick={() => {}}
+          >
+            Mostrar
+          </button>
+        </div>
+
+        <a href="#forgot-password" className="forgot-password-link">
+          ¿Has olvidado tu contraseña?
+        </a>
+
+        <button type="submit" className="login-button">
+          INICIAR SESIÓN
+        </button>
+      </form>
+      <p className="signup-text">
+        Si eres nuevo, <a href="/signup" className="signup-link">REGÍSTRATE</a>
+      </p>
+      <p className="go-back-text">
+        <a href="/dashboard" className="go-back-link"> ← Regresar</a>
+      </p>
     </div>
-    <div>
-      <p>EN EDICION</p>
-    </div>
-    <div className="botones">
-     <button className="botonL" onClick={handleLogin}>INICIAR SESIÓN</button>
-      <button className="botonR">REGISTRARME</button>
-    </div>
-  </div>
-);
+  );
 }
+
 export default Login;
