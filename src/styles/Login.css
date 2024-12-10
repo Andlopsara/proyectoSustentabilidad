@@ -1,35 +1,35 @@
 
-.go-back-link {
-  color: #0b532e; /* Color del texto */
+.botonRegresar{
+  color: #0b532e; 
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
-  cursor: pointer; /* Cursor de mano para enlaces */
+  cursor: pointer; 
 }
 
-.go-back-link:hover {
-  text-decoration: underline; /* Subrayado al pasar el cursor */
+.botonRegresar:hover {
+  text-decoration: underline;
 }
 
-.go-back-text {
+.regresarTexto {
   margin-top: 5px;
   font-size: 14px;
   text-align: center;
 }
 
-.password-container {
+.passwordContainer {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.password-container input {
+.passwordContainer input {
   flex: 1;
   padding-right: 70px;
 }
 
-.toggle-password {
+.passwordCambio {
   position: absolute;
   right: 10px;
   background: none;
@@ -38,13 +38,15 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  padding: 5px;
+  top:13%;
 }
 
-.toggle-password:hover {
+.passwordCambio:hover {
   color: #005C37;
 }
 
-.login-container {
+.loginContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,29 +55,30 @@
   background-color: #E8F8E8;
 }
 
-.logo-section {
+.logoSeccion{
   margin-bottom: 10px;
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
 }
 
 h1 {
   font-size: 24px;
   color: #005C37;
-  margin-bottom: 60px;
+  margin-bottom: 30px; /* Reduce la separación si es necesario */
 }
 
-.login-form {
+.loginForm {
   width: 90%;
-  max-width: 400px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
+  margin-top: 15px;
 }
 
-.login-form label {
+.loginForm label {
   font-size: 14px;
   color: #005C37;
   font-family: 'Poppins', sans-serif;
@@ -84,14 +87,14 @@ h1 {
   margin-left: 5%;
 }
 
-.login-form input {
+.loginForm input {
   padding: 10px;
   border-radius: 30px;
   border: 1px solid #96d09b;
   background-color: #96d09b;
 }
 
-.forgot-password-link {
+.olvidoPasswordLink {
   font-size: 12px;
   color: #0b532e;
   text-align: left;
@@ -100,8 +103,8 @@ h1 {
   margin-top: -5px;
 }
 
-.login-button {
-  padding: 5px;
+.loginBoton {
+  padding: -5px;
   border-radius: 30px;
   border: none;
   background-color: #0b532e;
@@ -114,21 +117,21 @@ h1 {
   height: 40px;
   text-align: center;
   margin: 10px auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.login-button:hover {
+.loginBoton:hover {
   background-color: #0b532e;
 }
 
-.signup-text {
+.signupTexto{
   margin-top: 5px;
   font-size: 14px;
   color: #0b532e;
   font-weight: 600;
 }
 
-.signup-link {
+.signupLink {
   color: #0b532e;
   font-weight: bold;
   text-decoration: none;
@@ -137,13 +140,13 @@ h1 {
   letter-spacing: 0.5px;
 }
 
-.signup-link:hover {
+.signupLink:hover {
   text-decoration: underline;
 }
 
-/* Consultas de medios para responsividad */
+/* Responsividad */
 @media (max-width: 768px) {
-  .login-form {
+  .loginForm {
     width: 80%;
   }
 
@@ -151,19 +154,18 @@ h1 {
     font-size: 20px;
   }
 
-  .login-button {
+  .loginBoton {
     font-size: 14px;
   }
 }
-
 @media (max-width: 480px) {
-  .login-form {
+  .loginForm {
     width: 100%;
     padding: 0 10px;
   }
 
   .logo {
-    width: 100px;
+    width: 55vmin;
   }
 
   h1 {
@@ -171,7 +173,7 @@ h1 {
     margin-bottom: 40px;
   }
 
-  .login-button {
+  .loginBoton{
     font-size: 12px;
   }
 }

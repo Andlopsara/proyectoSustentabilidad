@@ -1,23 +1,23 @@
 import React from 'react';
 import '../styles/Login.css';
-import logo1 from '../assets/logoSus1.png';
+import logo2 from '../assets/logoSus1.png';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate('/home'); // Ahora navega a Home
+    navigate('/home'); 
   };
 
   return (
-    <div className="login-container">
-      <div className="logo-section">
-        <img src={logo1} className="logo" alt="logo" />
+    <div className="loginContainer">
+      <div className="logoSeccion">
+        <img src={logo2} className="logo" alt="logo" />
       </div>
       <h1>¡INICIA SESIÓN!</h1>
       <form
-        className="login-form"
+        className="loginForm"
         onSubmit={(e) => {
           e.preventDefault();
           handleLogin();
@@ -28,39 +28,38 @@ function Login() {
           type="text"
           id="matricula"
           name="matricula"
-          placeholder="Ingresa tu matrícula"
+          placeholder=""
         />
 
         <label htmlFor="password">CONTRASEÑA</label>
-        <div className="password-container">
+        <div className="passwordContainer">
           <input
             type="password"
             id="password"
             name="password"
-            placeholder="Ingresa tu contraseña"
+            placeholder=""
           />
           <button
             type="button"
-            className="toggle-password"
+            className="passwordCambio"
             onClick={() => {}}
           >
             Mostrar
           </button>
         </div>
 
-        <a href="#forgot-password" className="forgot-password-link">
+        <a href="olvidoPassword" className="olvidoPasswordLink">
           ¿Has olvidado tu contraseña?
         </a>
-
-        <button type="submit" className="login-button">
+        <button type="submit" className="loginBoton">
           INICIAR SESIÓN
         </button>
       </form>
-      <p className="signup-text">
-        Si eres nuevo, <a href="/signUp" className="signup-link">REGÍSTRATE</a>
+      <p className="signupTexto">
+        Si eres nuevo, <a href="/signUp" className="signupLink">REGÍSTRATE</a>
       </p>
-      <p className="go-back-text">
-        <a href="/dashboard" className="go-back-link"> ← Regresar</a>
+      <p className="regresarTexto">
+        <a href="/dashboard" className="botonRegresar"> ← Regresar</a>
       </p>
     </div>
   );
