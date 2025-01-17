@@ -1,7 +1,17 @@
-/* General */
+.logoSeccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30%;
+}
+
+.logo {
+  width: 130px;
+  padding-top: 20px;
+}
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #E8F9E8;
+    background-color: #e6ffe8;
     margin: 0;
     padding: 0;
   }
@@ -10,7 +20,7 @@ body {
   .home-container {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #E8F9E8;
+    background-color: #e6ffe8;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: #e6ffe8;
   }
   
   .menu-button {
@@ -30,12 +40,6 @@ body {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-  }
-  
-  .logo {
-    font-size: 1.8rem;
-    color: #3AA65A;
-    margin: 0;
   }
   
   /* Contenido principal */
@@ -56,13 +60,16 @@ body {
     align-items: center;
     justify-content: center;
     width: 200px;
-    height: 250px; /* Altura suficiente para incluir el botón */
+    height: 250px; 
   }
   
-  .qr-container img {
-    width: 60%; /* Ajusta la imagen al centro del contenedor */
-    height: auto;
-    margin-bottom: 1rem; /* Separación con el botón */
+  .qrImagen {
+    width: 60%; 
+    height: auto; 
+    margin-bottom: 1rem; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
   }
   
   .scan-button {

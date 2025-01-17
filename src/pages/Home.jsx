@@ -1,20 +1,21 @@
 import React from 'react';
-import '../styles/Home.css'; // Asegúrate de que este archivo exista en tu proyecto
+import logo2 from '../assets/logoSus1.png';
+import '../styles/Home.css'; 
 
 const Home = () => {
   return (
     <div className="home-container">
       <header className="home-header">
         <button className="menu-button">☰</button>
-        <h1 className="logo">CS</h1>
+        <div className="logoSeccion">
+        <img src={logo2} alt="Logo" className="logo" />
+      </div>
       </header>
 
       <main className="home-main">
-        <div className="qr-container">
-          <img
-            src="/path-to-your-qr-code-image.png" // Cambia esta ruta a la imagen correcta
-            alt="Código QR"
-          />
+        <div className="qrImagenr">
+        <img src="/assets/qrImagen.png" alt="qrImage" />
+
           <button className="scan-button">Permitir el acceso a la cámara</button>
         </div>
 
